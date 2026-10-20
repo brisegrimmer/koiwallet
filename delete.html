@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delete account — Koi Wallet</title><meta name="robots" content="index,follow"><style>
+:root{--bg:#FAF6EE;--ink:#262A3E;--mut:#5B6678;--line:#E4DCCB;--acc:#C73E0C;--surf:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#1B1E2E;--ink:#FAF6EE;--mut:#A8B0C0;--line:#3A3F57;--acc:#FF8A5C;--surf:#262A3E}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.brand{font-weight:800;font-size:18px}.lang{display:flex;gap:6px}
+.lang button{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--surf);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.lang button[aria-pressed=true]{border-color:var(--acc);color:var(--acc)}
+h1{font-size:28px;line-height:1.2;margin:16px 0 4px}h2{font-size:20px;margin:32px 0 8px}
+.upd{color:var(--mut);font-size:14px;margin:0 0 20px}.brief{background:var(--surf);border:1.5px solid var(--line);border-radius:20px;padding:4px 20px 8px}
+a{color:var(--acc)}ul{padding-left:22px}li{margin:6px 0}
+[data-l]{display:none}html[lang=sr] [data-l=sr],html[lang=en] [data-l=en]{display:block}
+html[lang=sr] li[data-l=sr],html[lang=en] li[data-l=en]{display:list-item}
+.card{background:var(--surf);border:1.5px solid var(--line);border-radius:20px;padding:4px 20px 12px;margin:12px 0}
+footer{margin-top:40px;color:var(--mut);font-size:14px}
+</style></head><body><main>
+<header><span class="brand">Koi Wallet</span><span class="lang"><button type="button" data-set="sr" aria-pressed="true">Srpski</button><button type="button" data-set="en" aria-pressed="false">English</button></span></header>
+<div data-l="sr"><h1>Brisanje naloga i podataka — Koi Wallet</h1><p class="upd">Poslednja izmena: 20. oktobar 2026.</p>
+<div class="card"><h2 style="margin-top:12px">U aplikaciji (najbrže)</h2><ol><li>Otvori Koi Wallet i idi na <b>Podešavanja</b>.</li><li>Dodirni svoj <b>Nalog</b>.</li><li>Izaberi <b>Obriši nalog</b> i potvrdi (lozinkom ili Google prijavom).</li></ol><p>Time se odmah brišu tvoj nalog, svi unosi, ciljevi, planovi i podešavanja sa servera i sa telefona.</p></div>
+<div class="card"><h2 style="margin-top:12px">Bez aplikacije</h2><p>Ako si deinstalirao aplikaciju ili više ne možeš da se prijaviš, pošalji zahtev na <a href="mailto:hukicnizar@gmail.com?subject=Koi%20Wallet%20-%20brisanje%20naloga">hukicnizar@gmail.com</a> sa e-poštom naloga. Nalog i podatke brišemo u roku od 30 dana i potvrđujemo odgovorom.</p></div>
+<h2>Šta se briše</h2><ul><li>Nalog (e-pošta, ime, način prijave) u Firebase Authentication.</li><li>Svi unosi, ciljevi štednje, plan meseca, kategorije i podešavanja u Firestore bazi.</li><li>Zajednički prostor sa partnerom: ako si ti vlasnik, brišu se zajednički unosi, ciljevi i pozivni kodovi, a partner zadržava svoj nalog i svoje lične unose. Ako si partner, izlaziš iz domaćinstva, a tvoji zajednički unosi se uklanjaju iz zajedničkog prostora.</li></ul>
+<h2>Šta može da ostane</h2><p>Rezervne kopije servera mogu da zadrže ostatke najviše 30 dana, posle čega nestaju. Podatke ne čuvamo iz drugih razloga.</p>
+<h2>Rad bez naloga</h2><p>Ako nikad nisi pravio nalog, podaci su samo na tvom telefonu i nestaju kad obrišeš aplikaciju (ili u Podešavanjima obrišeš podatke).</p>
+<p>Više u <a href="privacy.html#sr">Politici privatnosti</a>.</p></div><div data-l="en"><h1>Delete your account and data — Koi Wallet</h1><p class="upd">Last updated: 20 October 2026</p>
+<div class="card"><h2 style="margin-top:12px">In the app (fastest)</h2><ol><li>Open Koi Wallet and go to <b>Settings</b>.</li><li>Tap your <b>Account</b>.</li><li>Choose <b>Delete account</b> and confirm (with your password or Google sign-in).</li></ol><p>This immediately deletes your account, all entries, goals, plans and settings from the server and from your phone.</p></div>
+<div class="card"><h2 style="margin-top:12px">Without the app</h2><p>If you uninstalled the app or can no longer sign in, email <a href="mailto:hukicnizar@gmail.com?subject=Koi%20Wallet%20-%20account%20deletion">hukicnizar@gmail.com</a> with your account email. We delete the account and data within 30 days and confirm by reply.</p></div>
+<h2>What is deleted</h2><ul><li>The account (email, name, sign-in method) in Firebase Authentication.</li><li>All entries, savings goals, monthly plan, categories and settings in the Firestore database.</li><li>The shared space with your partner: if you are the owner, the shared entries, goals and invitation codes are deleted, and your partner keeps their own account and personal entries. If you are the partner, you leave the household and your shared entries are removed from the shared space.</li></ul>
+<h2>What may remain</h2><p>Server backups may hold remnants for up to 30 days, after which they disappear. We keep no data for any other reason.</p>
+<h2>Using the app without an account</h2><p>If you never created an account, your data is only on your phone and disappears when you uninstall the app (or clear its data in Settings).</p>
+<p>More in the <a href="privacy.html#en">Privacy Policy</a>.</p></div>
+<footer><span data-l="sr">Koi Wallet · Nizar Hukić · <a href="mailto:hukicnizar@gmail.com">hukicnizar@gmail.com</a></span><span data-l="en">Koi Wallet · Nizar Hukić · <a href="mailto:hukicnizar@gmail.com">hukicnizar@gmail.com</a></span></footer>
+</main><script>(function(){var h=document.documentElement,q=location.hash.replace('#','');var l=localStorage.getItem('koi_legal_lang')||(/^sr|hr|bs|sh/.test(navigator.language||'')?'sr':'en');if(q==='sr'||q==='en')l=q;
+function set(x){h.lang=x;try{localStorage.setItem('koi_legal_lang',x)}catch(e){}[].forEach.call(document.querySelectorAll('.lang button'),function(b){b.setAttribute('aria-pressed',b.dataset.set===x)});document.title=document.querySelector('title[data-'+x+']')?'':document.title}
+set(l);[].forEach.call(document.querySelectorAll('.lang button'),function(b){b.onclick=function(){set(b.dataset.set)}})})();</script></body></html>
